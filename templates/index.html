@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <style>
+
+  </style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+</head>
+
+<body>
+
+  
+  <div class="row">
+    <div class="column2">
+      <button class="button1"onclick="location.href = 'INSERT HERE'">VR</button>
+    </div>
+    <div class=" column2">
+    <form>
+      <button class="button2">Add Post</button>
+    </form>
+    </div>
+    <div class="column2">
+    <form 
+      action="https://www.veteranscrisisline.net" method="get" target="_blank">
+      <button class="button3" >Emergency Hotline</button>
+    </form>
+    </div>
+  </div>
+  </div>
+
+  <h1>
+    <center>Doug House</center>
+  </h1>
+  <h3>
+    <center>The Ultimate Dog Website For Veterans</center>
+  </h3>
+  <div class="center">Welcome to the Doug House. Here you can access a relaxing VR world to soothe your mind. You can
+    also share and view images of dogs and other pets to make your day just a little bit better. In case of emergencies,
+    you can access the completely confidential Veterans Crisis Hotline, open 24/7. Enjoy!</div>
+  <br />
+  {% for job in jobs %}
+    {% include 'video.html' %}
+  {% endfor %}
+
+  <script src="https://replit.com/public/js/replit-badge-v2.js" theme="dark" position="bottom-right"></script>
+</body>
+
+</html>
